@@ -79,14 +79,4 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     }
 }
 
-extension UIButton {
-    
-    static let plainConfigurationUpdatedHandler: ConfigurationUpdateHandler = {button in
-        if button.state == .disabled || button.state == .highlighted {
-            button.alpha = 0.5
-        } else {
-            button.alpha = 1.0
-        }
-    }
-    
-}
+

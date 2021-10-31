@@ -34,3 +34,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+
+extension UIButton {
+    
+    // iOS 15 made disabled & highlighted states a little bit more manual.
+    static let plainConfigurationUpdatedHandler: ConfigurationUpdateHandler = {button in
+        if button.state == .disabled || button.state == .highlighted {
+            button.alpha = 0.5
+        } else {
+            button.alpha = 1.0
+        }
+    }
+    
+}

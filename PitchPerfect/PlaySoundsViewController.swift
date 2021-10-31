@@ -62,8 +62,14 @@ class PlaySoundsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        snailButton.configurationUpdateHandler = UIButton.plainConfigurationUpdatedHandler
+        rabbitButton.configurationUpdateHandler = UIButton.plainConfigurationUpdatedHandler
+        squirrelButton.configurationUpdateHandler = UIButton.plainConfigurationUpdatedHandler
+        vaderButton.configurationUpdateHandler = UIButton.plainConfigurationUpdatedHandler
+        birdButton.configurationUpdateHandler = UIButton.plainConfigurationUpdatedHandler
+        reverbButton.configurationUpdateHandler = UIButton.plainConfigurationUpdatedHandler
+        stopButton.configurationUpdateHandler = UIButton.plainConfigurationUpdatedHandler
         setupAudio()
-        // Do any additional setup after loading the view.
     }
     
     override func viewWillAppear(_ animated: Bool) {
